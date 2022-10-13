@@ -1,0 +1,16 @@
+Description: fix test (error message changes)
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Reviewed-By: Yadd <yadd@debian.org>
+Last-Update: 2021-09-26
+
+--- a/test.js
++++ b/test.js
+@@ -7,7 +7,6 @@
+ 			invertKeyValue(null);
+ 		},
+ 		{
+-			instanceOf: TypeError,
+ 			message: 'Expected an object'
+ 		}
+ 	);
